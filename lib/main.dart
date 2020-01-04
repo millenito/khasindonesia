@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khasindonesia/produk.dart';
 
 void main() => runApp(MyApp());
 
@@ -32,7 +33,7 @@ class Home extends StatelessWidget {
           Column(
             children: <Widget>[
               Container(
-                child: Image.asset('assets/images/banner/banner-1.png'),
+                child: Image.asset('assets/images/banner/banner-4.png'),
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
@@ -51,7 +52,7 @@ class Home extends StatelessWidget {
               SubHeader(
                 icon: Icons.shopping_cart,
                 marginTop: 20.0,
-                text: 'Best Selling',
+                text: 'Produk Terlaris',
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -63,19 +64,19 @@ class Home extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       ItemCard(
-                        productName: 'Batik Pekalongan',
-                        productPrice: 'Rp 270.000',
-                        productImage: 'assets/images/beli/batik.jpeg',
+                        productName: BatikPekalongan.name,
+                        productPrice: BatikPekalongan.price,
+                        productImage: BatikPekalongan.image,
                       ),
                       ItemCard(
-                        productName: 'Angklung',
-                        productPrice: 'Rp 1.000.000',
-                        productImage: 'assets/images/beli/angklung.jpg',
+                        productName: Angklung.name,
+                        productPrice: Angklung.price,
+                        productImage: Angklung.image,
                       ),
                       ItemCard(
-                        productName: 'Kain Tenun',
-                        productPrice: 'Rp 310.000',
-                        productImage: 'assets/images/beli/tenun.jpg',
+                        productName: KainTenun.name,
+                        productPrice: KainTenun.price,
+                        productImage: KainTenun.image,
                       ),
                     ],
                   ),
@@ -84,7 +85,7 @@ class Home extends StatelessWidget {
               SubHeader(
                 icon: Icons.new_releases,
                 marginTop: 20.0,
-                text: 'New Products',
+                text: 'Produk Baru',
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -96,24 +97,21 @@ class Home extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       ItemCard(
-                        productName: 'Topeng Jawa',
-                        productPrice: 'Rp 250.000',
-                        productImage:
-                            'assets/images/figur/kerajinan/topeng.jpg',
+                        productName: TopengJawa.name,
+                        productPrice: TopengJawa.price,
+                        productImage: TopengJawa.image,
                         productImageScale: 3.7,
                       ),
                       ItemCard(
-                        productName: 'Kain Jawa Tengah',
-                        productPrice: 'Rp 200.000',
-                        productImage:
-                            'assets/images/figur/kain/jawa tengah.jpg',
+                        productName: KainJawaTengah.name,
+                        productPrice: KainJawaTengah.price,
+                        productImage: KainJawaTengah.image,
                         productImageScale: 3.7,
                       ),
                       ItemCard(
-                        productName: 'Anyaman',
-                        productPrice: 'Rp 400.000',
-                        productImage:
-                            'assets/images/figur/kerajinan/anyaman.jpg',
+                        productName: Anyaman.name,
+                        productPrice: Anyaman.price,
+                        productImage: Anyaman.image,
                         productImageScale: 3.7,
                       ),
                     ],
